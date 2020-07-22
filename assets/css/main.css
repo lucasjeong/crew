@@ -893,7 +893,7 @@ input, select, textarea {
 		border: 0;
 	}
 
-		.image.filtered:after {
+		.image.filtered:after { /*사진칸 색상*/
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
 			pointer-events: none;
@@ -1646,9 +1646,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: white;
+			background-color: var(--sant1);
 			box-shadow: none;
-			color: #2e2b37 !important;
+			color: var(--sant5) !important;
 		}
 
 			input[type="submit"].primary.color1,
@@ -1656,7 +1656,7 @@ input, select, textarea {
 			input[type="button"].primary.color1,
 			button.primary.color1,
 			.button.primary.color1 {
-				color: #726193 !important;
+				color: var(--sant5) !important;
 			}
 
 			input[type="submit"].primary.color2,
@@ -1688,7 +1688,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffe4b4;
+				background-color: var(--sant4);
 			}
 
 			input[type="submit"].primary:active,
@@ -2211,7 +2211,7 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant5) 20%, var(--sant2)); /*제목*/
 				background-size: 128px 128px, auto;
 			}
 
@@ -2236,7 +2236,7 @@ input, select, textarea {
 			.panel > *.color4 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
-				background-color: #353865;
+				background-color: #353865;/*contact*/
 			}
 
 			.panel > *.color1-alt {
@@ -2735,7 +2735,7 @@ input, select, textarea {
 		.panel.color1 {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 			background-size: 128px 128px, auto;
-			background-color: #726193;
+			background-color: blue; /*조직구성*/
 		}
 
 		.panel.color2 {
@@ -3458,8 +3458,8 @@ input, select, textarea {
 			justify-content: flex-start;
 		}
 
-			.panel.spotlight.left .content {
-				background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.175) 50%);
+			.panel.spotlight.left .content { /*활동내용*/
+				background-image: linear-gradient(-90deg, blue, red);
 			}
 
 		.panel.spotlight.right {
@@ -3469,8 +3469,8 @@ input, select, textarea {
 			justify-content: flex-end;
 		}
 
-			.panel.spotlight.right .content {
-				background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.125) 30%, rgba(0, 0, 0, 0.175) 50%);
+			.panel.spotlight.right .content { /*인사말*/
+				background-image: linear-gradient(90deg, blue, red);
 			}
 
 	@media screen and (max-width: 736px) {
