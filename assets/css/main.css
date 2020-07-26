@@ -213,7 +213,6 @@ input, select, textarea {
 			width: 4rem;
 			height: 4rem;
 			margin: -2rem 0 0 -2rem;
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='96px' height='96px' viewBox='0 0 96 96' zoomAndPan='disable'%3E%3Cstyle%3Ecircle %7Bfill: transparent%3B stroke: %232e2b37%3B stroke-width: 1.5px%3B %7D%3C/style%3E%3Cdefs%3E%3CclipPath id='corner'%3E%3Cpolygon points='0,0 48,0 48,48 96,48 96,96 0,96' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23corner)'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3C/g%3E%3C/svg%3E");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 4rem;
@@ -231,7 +230,7 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: var(--sant1);
+			background-color: #f7cb2d;
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -307,7 +306,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: var(--sant1); /*투명도 추가?*/
+		color: rgba(238, 239, 243, 0.9); /*투명도 추가?*/
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
@@ -326,11 +325,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: var(--sant1);
+			color: rgba(238, 239, 243, 0.9);;
 		}
 
 	strong, b {
-		color: var(--sant1)/*투명도추가?*/;
+		color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 		font-weight: 400;
 	}
 
@@ -347,7 +346,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: var(--sant1)/*투명도추가?*/;
+		color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: 700;
 		line-height: 1.3;
@@ -630,7 +629,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: var(--sant1)/*투명도추가?*/;
+		color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 		display: block;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -678,7 +677,7 @@ input, select, textarea {
 		}
 
 	option {
-		background-color: var(--sant1)/*투명도추가?*/;
+		background-color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 		color: #2e2b37;
 	}
 
@@ -693,7 +692,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: var(--sant1)/*투명도추가?*/;
+			color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 			background: #2e2b37;
 		}
 
@@ -734,7 +733,7 @@ input, select, textarea {
 		input[type="radio"] + label {
 			text-decoration: none;
 			position: relative;
-			color: var(--sant1)/*투명도추가?*/;
+			color: rgba(238, 239, 243, 0.9);/*투명도추가?*/;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1rem;
@@ -893,7 +892,7 @@ input, select, textarea {
 	}
 
 		.image.filtered:after { /*사진칸 색상*/
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(27, 25, 39, 0.1), rgba(23, 14, 65, 0.1));/*갤러리사진색상*/
+			background-color: rgba(0,135,234,0.15);/*갤러리사진색상?*/
 			background-size: 128px 128px, auto;
 			pointer-events: none;
 			content: '';
@@ -907,8 +906,8 @@ input, select, textarea {
 		}
 
 		.image.filtered.tinted:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(0, 48, 216, 0.5), rgba(0, 48, 216, 0.5));/*뒷배경사진색상*/
-			background-size: 128px 128px, auto, auto;
+			background-size: auto 128px, auto, auto;
+			background-image: linear-gradient(90deg, rgba(0,135,234,0.95) 2%, rgba(0,114,230,0.85), rgba(0,135,234,0.95) 98%);
 		}
 
 		.image[data-position] img {
@@ -1392,7 +1391,7 @@ input, select, textarea {
 				line-height: 2.25rem;
 				border-radius: 2.25rem;
 				background-color: var(--sant1);
-				color: var(--sant5);
+				color: var(--sant4);
 				cursor: default;
 				font-size: 1.125rem;
 				margin-right: 1rem;
@@ -1409,19 +1408,19 @@ input, select, textarea {
 			}
 
 		ul.contact-icons.color1 > li:before {
-			color: var(--sant5);
+			color: var(--sant4);
 		}
 
 		ul.contact-icons.color2 > li:before {
-			color: var(--sant5);
+			color: var(--sant4);
 		}
 
 		ul.contact-icons.color3 > li:before {
-			color: var(--sant5);
+			color: var(--sant4);
 		}
 
 		ul.contact-icons.color4 > li:before {
-			color: var(--sant5);
+			color: var(--sant4);
 		}
 
 /* Table */
@@ -1647,7 +1646,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: var(--sant1);
 			box-shadow: none;
-			color: var(--sant5) !important;
+			color: var(--sant4) !important;
 		}
 
 			input[type="submit"].primary.color1,
@@ -1655,7 +1654,7 @@ input, select, textarea {
 			input[type="button"].primary.color1,
 			button.primary.color1,
 			.button.primary.color1 {
-				color: var(--sant5) !important;
+				color: var(--sant4) !important;
 			}
 
 			input[type="submit"].primary.color2,
@@ -1687,7 +1686,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: var(--sant4);
+				background-color: var(--sant2);
 			}
 
 			input[type="submit"].primary:active,
@@ -2210,54 +2209,48 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant5) 20%, var(--sant2)); /*제목*/
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
 			}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #726193;
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant5) 20%, var(--sant2)); /*활동사진*/
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
 			}
 
 			.panel > *.color3 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
 			}
 
 			.panel > *.color4 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant5) 20%, var(--sant2)); /*문의*/
+				background-color: var(--sant4);
 				background-size: 128px 128px, auto;
 			}
 
 			.panel > *.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
 			}
 
 			.panel > *.color2-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #de7172;
 			}
 
 			.panel > *.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
 			}
 
-			.panel > *.color4-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+			.panel > *.color4-alt {				
+				background-color: var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #323459;
 			}
 
 		.panel > .intro {
@@ -2725,55 +2718,48 @@ input, select, textarea {
 		}
 
 		.panel.color0 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant5) 20%, var(--sant2));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
 		}
 
 		.panel.color1 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant6) 20%, var(--sant2));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto; /*조직구성*/
 		}
 
 		.panel.color2 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #e37b7c;
 		}
 
 		.panel.color3 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #ffe4b4;
 		}
 
 		.panel.color4 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+			background-color: var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #353865;
 		}
 
 		.panel.color1-alt {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #6c5e86;
 		}
 
 		.panel.color2-alt {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #de7172;
 		}
 
 		.panel.color3-alt {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+			background-color:var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #fedea6;
 		}
 
 		.panel.color4-alt {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+			background-color: var(--sant4);
 			background-size: 128px 128px, auto;
-			background-color: #323459;
 		}
 
 	@media screen and (max-width: 736px) {
@@ -2787,50 +2773,43 @@ input, select, textarea {
 		}
 
 			.panel > *.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant6) 20%, var(--sant2));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto; /*조직구성*/
 			}
 
 			.panel > *.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
 			}
 
 			.panel > *.color3 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
 			}
 
 			.panel > *.color4 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color: var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #353865;
 			}
 
 			.panel > *.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
 			}
 
 			.panel > *.color2-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #de7172;
 			}
 
 			.panel > *.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
 			}
 
 			.panel > *.color4-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color: var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #323459;
 			}
 
 			.panel > .intro {
@@ -3213,50 +3192,43 @@ input, select, textarea {
 				}
 
 			.panel.color1 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, var(--sant6) 20%, var(--sant2));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto; /*조직구성*/
 			}
 
 			.panel.color2 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #e37b7c;
 			}
 
 			.panel.color3 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #ffe4b4;
 			}
 
 			.panel.color4 {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #353865;
 			}
 
 			.panel.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
 			}
 
 			.panel.color2-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #de7172;
 			}
 
 			.panel.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color:var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #fedea6;
 			}
 
 			.panel.color4-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(135deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+				background-color: var(--sant4);
 				background-size: 128px 128px, auto;
-				background-color: #323459;
 			}
 
 	}
@@ -3453,7 +3425,7 @@ input, select, textarea {
 		}
 
 			.panel.spotlight.left .content { /*활동내용*/
-				background-image: linear-gradient(90deg, rgba(0,0,255,0.5), transparent);
+				background-color:transparent;
 			}
 
 		.panel.spotlight.right {
@@ -3464,7 +3436,7 @@ input, select, textarea {
 		}
 
 			.panel.spotlight.right .content { /*인사말*/
-				background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(3,26,127,0.8));
+				background-color: transparent;
 			}
 
 	@media screen and (max-width: 736px) {
@@ -3661,7 +3633,7 @@ input, select, textarea {
 			flex-direction: column;
 			height: auto;
 			margin: 0 0 5rem 0;
-			box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(40, 39, 100, 0.589);
+			box-shadow: 0 0 2rem 0.25rem rgba(30, 144, 255, 0.75);
 		}
 
 			#wrapper > .scrollZone {

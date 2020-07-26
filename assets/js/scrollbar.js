@@ -1,5 +1,5 @@
 jQuery(function($){
-    var growmouseover = [true, '25px'] // magnify progress bar onmouseover? [Boolean, newheight]
+    var growmouseover = [true, '15px'] // magnify progress bar onmouseover? [Boolean, newheight]
 
 ///////// No need to edit beyond here /////////
 

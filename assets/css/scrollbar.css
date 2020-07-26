@@ -1,10 +1,10 @@
 .scrollindicator{
     width: 100%;
-    height: 7px; /* height of progress bar */
+    height: 15px; /* height of progress bar */
     display: block;
     background: white;
     left: 0;
-    top: 0; /* dock progress bar to bottom of page (change to "top" for top instead) */
+    bottom: 0;/* dock progress bar to bottom of page (change to "top" for top instead) */
     cursor: pointer;
     position: fixed;
     z-index: 1000000;
@@ -17,14 +17,14 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background:#031a7f;/* background color of progress bar */
+    background:#0087ea;/* background color of progress bar */
     -webkit-transform: translate3d(-100%,0,0);
     transform: translate3d(0,-100%,0);
     -webkit-transition: -webkit-transform .4s ease; 
     transition: transform .4s ease; /* animate progress bar? Remove to disable */
 }
 
-.scroll-top {
+.scroll-bottom {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
@@ -37,6 +37,6 @@
 	border: none;
 	color: #fff;
 }
-.scroll-top:hover {
+.scroll-bottom:hover {
 	cursor: pointer;
 }
