@@ -907,7 +907,7 @@ input, select, textarea {
 
 		.image.filtered.tinted:after {
 			background-size: auto 128px, auto, auto;
-			background-image: linear-gradient(90deg, rgba(0,135,234,0.95) 2%, rgba(0,114,230,0.85), rgba(0,135,234,0.95) 98%);
+			background-color: rgba(0,114,230,0.85);
 		}
 
 		.image[data-position] img {
@@ -3658,7 +3658,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		#wrapper {
-			box-shadow: none;
+			box-shadow: 0 0 2rem 0.25rem rgba(30, 144, 255, 0.75);
 		}
 
 			body.is-preload #wrapper {
